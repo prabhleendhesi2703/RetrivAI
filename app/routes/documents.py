@@ -1,5 +1,5 @@
 import os
-import traceback  # <-- IMPORT THIS MODULE AT THE TOP
+import traceback  
 from fastapi import APIRouter, UploadFile, File, HTTPException
 from typing import List
 from app.core.document_processor import load_document, chunk_documents
@@ -33,12 +33,8 @@ async def upload_documents(files: List[UploadFile] = File(...)):
             
         return {"message": f"Successfully processed and indexed {len(files)} document(s)."}
     except Exception as e:
-        # --- ADD THESE TWO LINES TO SEE THE FULL ERROR ---
         print("An error occurred during document processing:")
         traceback.print_exc()
-        # --------------------------------------------------
-
-        # Clean up saved files in case of an error
         for path in saved_paths:
             if os.path.exists(path):
                 os.remove(path)

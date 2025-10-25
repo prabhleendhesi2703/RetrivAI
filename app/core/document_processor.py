@@ -3,8 +3,6 @@ from langchain_core.documents import Document
 from langchain_community.document_loaders import PyPDFLoader, UnstructuredWordDocumentLoader, TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-# THIS IS THE FILE WHERE THESE FUNCTIONS ARE DEFINED, SO THEY DON'T NEED TO BE IMPORTED.
-
 def load_document(file_path: str):
     """Loads a document from the given file path based on its extension."""
     ext = os.path.splitext(file_path)[1].lower()
