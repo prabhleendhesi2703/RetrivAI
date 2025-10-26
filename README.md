@@ -57,13 +57,13 @@ root/
 
 ---
 
-## Setup Instructions (clear, step-by-step)
+## Setup Instructions 
 
-> These commands assume you have Python 3.10+ installed.
+
 
 ### 1) Clone the repository
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
+git clone https://github.com/prabhleendhesi2703/RetrivAI/
 cd RetrivAI-main
 ````
 
@@ -175,13 +175,6 @@ curl -X POST "http://localhost:8000/api/v1/chat/" \
 https://youtu.be/<your-demo-id>
 ```
 
-Suggested recordings to show in the demo:
-
-1. Start the server and open `/docs`.
-2. Upload 1–2 sample documents.
-3. Run 2–3 queries that show correct retrieval and grounded answers.
-4. Mention limitations and next steps.
-
 ---
 
 ## Limitations
@@ -195,6 +188,7 @@ Suggested recordings to show in the demo:
 ## Developed by
 
 Prabhleen Dhesi
+
 Roll No: 12201153
 
 ```
