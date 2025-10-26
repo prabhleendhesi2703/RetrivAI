@@ -172,7 +172,7 @@ curl -X POST "http://localhost:8000/api/v1/chat/" \
 ## Demo Video
 
 ```
-https://youtu.be/<your-demo-id>
+https://youtu.be/08Kw1b-FgS0
 ```
 
 ---
